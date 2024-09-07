@@ -1,5 +1,5 @@
 describe('Cadastro de Professores - Sistema Externo', () => {
-  it('Deve permitir o login e cadastrar um novo professor', () => {
+  it('Deve permitir o login e cadastrar um novo professor com todos os campos obrigatorios', () => {
 
     // Visitar a página principal
     cy.visit('https://gestao-escolar.up.railway.app/');
