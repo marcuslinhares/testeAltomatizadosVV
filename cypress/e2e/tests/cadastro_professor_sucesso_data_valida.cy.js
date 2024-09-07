@@ -46,14 +46,10 @@ describe('Cadastro de Professores - Sistema Externo', () => {
       // Garantir que o botão "Salvar" esteja visível e então clicar
       cy.contains('button', 'Salvar').should('be.visible').click({ force: true });
   
-      // Verificar que a mensagem de sucesso **não** aparece
-      cy.contains('Professor cadastrado com sucesso').should('not.exist');
-  
-      // Opcional: Verificar que a mensagem de erro ou campo inválido está visível
-      cy.get('input[placeholder="dd/mm/aaaa"]').then(($input) => {
-        expect($input[0].validationMessage).to.not.equal('');
+
+      // Verificar se o cadastro foi bem-sucedido
+      cy.contains('Professor cadastrado com sucesso').should('be.visible');
+    
       });
-  
-    });
   });
   
