@@ -50,6 +50,7 @@ describe('Cadastro de Professores - Sistema Externo', () => {
       // Verificar se o cadastro foi bem-sucedido
       cy.contains('Professor cadastrado com sucesso').should('be.visible');
     
+
       });
   });
   

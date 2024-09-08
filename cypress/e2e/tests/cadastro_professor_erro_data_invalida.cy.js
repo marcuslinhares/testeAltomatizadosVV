@@ -53,7 +53,7 @@ describe('Cadastro de Professores - Sistema Externo', () => {
       cy.get('input[placeholder="dd/mm/aaaa"]').then(($input) => {
         expect($input[0].validationMessage).to.not.equal('');
       });
-  
+
     });
   });
   

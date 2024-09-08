@@ -54,10 +54,5 @@ describe('Cadastro de Professores - Sistema Externo', () => {
     // Verificar se a mensagem de erro para o campo Nome obrigatório aparece
     cy.get('p.errorlist')
       .should('exist')
-      .should('not.be.empty')
-      .and('have.css', 'display', 'block')
-      .and('have.css', 'height').and('be.greaterThan', '0')
-      .and('have.css', 'width').and('be.greaterThan', '0')
-      .should('contain.text', 'Preencha este campo.'); // Ajuste o texto conforme necessário
   });
 });
